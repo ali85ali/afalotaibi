@@ -28,7 +28,7 @@ public class ServerStatusCheckService {
         List<ServerInfo> servers = new ArrayList<>();
         String msg = "";
 
-        servers.add(new ServerInfo("172.20.204.98", 7010));
+        servers.add(new ServerInfo("...", 7010));
         boolean flag;
         for (ServerInfo serverInfo : servers) {
             flag = hostAvailabilityCheck(serverInfo.ip, serverInfo.port);
